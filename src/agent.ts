@@ -103,7 +103,7 @@ export const codingAgent = new HarnessAgent({
     console.error('[tool:start] ' + toolCall.toolName);
   },
 
-  onToolExecutionEnd({ toolCall }) {
-    console.error('[tool:end] ' + toolCall.toolName);
+  onToolExecutionEnd({ toolOutput }) {
+    console.error('[tool:end] ' + toolOutput.type);
   },
 });
