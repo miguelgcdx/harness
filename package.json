@@ -1,0 +1,28 @@
+{
+  "name": "harness",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "basic": "tsx src/examples/01-basic.ts",
+    "fix": "tsx src/examples/02-fix-repo.ts",
+    "stream": "tsx src/examples/03-stream.ts",
+    "multi": "tsx src/examples/04-multi-turn.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ai-sdk/harness": "^1.0.139",
+    "@ai-sdk/harness-pi": "^1.0.140",
+    "@ai-sdk/sandbox-just-bash": "^1.0.139",
+    "ai": "^7.0.123",
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
